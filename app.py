@@ -11,7 +11,7 @@ def outgoing_webhook(): #Teams -> Flask Server로 Receive 받는 Fucntion
             "type":"message",
             "text":"Echo."
         }
-        response = app.response_class(response = json.dumps(data), status. mimetype = 'application/json')
+        response = app.response_class(response = json.dumps(data), status=200, mimetype = 'application/json')
 
         return response_class
     else :
